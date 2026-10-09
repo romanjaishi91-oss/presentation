@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0a0a0c;
+  color: #e0e0e6;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Profile Header Box */
+.profile-box {
+  background: linear-gradient(135deg, #141417, #0a0a0c);
+  border: 2px solid #3b82f6;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.25);
+}
+
+/* GitHub Profile Avatar Styling */
+.avatar-container {
+  width: 110px;
+  height: 110px;
+  background: #1e1e22;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  overflow: hidden;
+  border: 3px solid #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-box h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.profile-box p {
+  color: #94a3b8;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+/* Category Boxes */
+.category-box {
+  background-color: #141417;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-top: 4px solid #333333;
+}
+
+/* Category Border Accents */
+.gaming-box { border-top-color: #ef4444; }
+.sports-box { border-top-color: #10b981; }
+.apps-box   { border-top-color: #3b82f6; }
+
+.box-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 12px;
+}
+
+.box-header i { font-size: 22px; }
+
+.gaming-box .box-header i { color: #ef4444; }
+.sports-box .box-header i { color: #10b981; }
+.apps-box   .box-header i { color: #3b82f6; }
+
+.box-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Grid Layout */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+/* Card Links */
+.item-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Individual Item Cards */
+.item-card {
+  background-color: #0a0a0c;
+  border: 1px solid #2a2a30;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  border-color: #4f4f56;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.icon-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.fa-icon {
+  font-size: 32px;
+  width: 36px;
+  text-align: center;
+}
+
+/* Icon Colors */
+.cricket-icon     { color: #eab308; }
+.football-icon    { color: #ffffff; }
+.basketball-icon  { color: #f97316; }
+.github-logo      { color: #ffffff; }
+.facebook-logo    { color: #1877f2; }
+.whatsapp-logo    { color: #25d366; }
+
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
